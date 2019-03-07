@@ -1,0 +1,32 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/system_events_client
+    docker:
+      - image: circleci/ruby:2.5
+        environment:
+          RAILS_ENV: test
+          SYSTEM_EVENTS_API_URL: https://system-events.kicksite-staging.net
+          KICKSITE_ADMIN_USERNAME: KicksiteAdmin
+          KICKSITE_SVC_NEW_USER_SESSION_URL: https://api.classic.kicksite-staging.net/v1/users/new/sessions
+
+    steps:
+      - checkout
+
+      # Bundle install dependencies
+      - run:
+          name: Bundle Install
+          command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs 4 --retry 3
+
+      - run:
+          name: Run Tests
+          command: bundle exec rspec spec
+
+      - run:
+          name: Run static code analyzer
+          command: |
+            gem install rubocop
+            rubocop --format html -o tmp/test-results/rubocop/results.html
+
+      - store_artifacts:
+          path: ./tmp/test-results
