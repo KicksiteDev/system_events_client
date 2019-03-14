@@ -1,11 +1,12 @@
+# Override of ActiveResource Connection class to provider bearer authentication
 class BearerAuthConnection < ActiveResource::Connection
   attr_accessor :bearer_token
 
   private
 
-  def authorization_header(http_method, uri)
-    if self.bearer_token && auth_type == :bearer
-      { 'Authorization' => "Bearer #{self.bearer_token}" }
+  def authorization_header(_http_method, _uri)
+    if bearer_token && auth_type == :bearer
+      { 'Authorization' => "Bearer #{bearer_token}" }
     else
       {}
     end

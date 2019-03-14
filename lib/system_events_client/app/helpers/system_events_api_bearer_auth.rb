@@ -8,6 +8,10 @@ class SystemEventsApiBearerAuth < SystemEventsApiBase
   self.element_name = ''
 
   class << self
+    # rubocop:disable Metrics/AbcSize
+    # rubocop:disable Metrics/CyclomaticComplexity
+    # rubocop:disable Metrics/MethodLength
+    # rubocop:disable Metrics/PerceivedComplexity
     def connection(refresh = false)
       if _connection_defined? || superclass == SystemEventsApiBase
         self._connection = BearerAuthConnection.new(site, format) if refresh || _connection.nil?
@@ -24,5 +28,9 @@ class SystemEventsApiBearerAuth < SystemEventsApiBase
         superclass.connection
       end
     end
+    # rubocop:enable Metrics/AbcSize
+    # rubocop:enable Metrics/CyclomaticComplexity
+    # rubocop:enable Metrics/MethodLength
+    # rubocop:enable Metrics/PerceivedComplexity
   end
 end
