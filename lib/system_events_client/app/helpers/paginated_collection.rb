@@ -1,3 +1,4 @@
+require 'activeresource'
 require 'kaminari'
 
 # Implementation of an ActiveResource collection that takes paging at the service into account.
