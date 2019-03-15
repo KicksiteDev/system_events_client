@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'activeresource'
   spec.add_runtime_dependency 'activeresource-response'
+  spec.add_runtime_dependency 'kaminari'
 
   spec.add_development_dependency 'bundler', '~> 1.16'
   spec.add_development_dependency 'byebug'
