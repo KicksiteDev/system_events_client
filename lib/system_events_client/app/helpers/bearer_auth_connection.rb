@@ -1,3 +1,5 @@
+require 'activeresource'
+
 # Override of ActiveResource Connection class to provider bearer authentication
 class BearerAuthConnection < ActiveResource::Connection
   attr_accessor :bearer_token
