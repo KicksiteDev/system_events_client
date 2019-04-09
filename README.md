@@ -27,7 +27,7 @@ export SYSTEM_EVENTS_API_URL=http://system-events.kicksite.test:3000
 # ===================================================================================================
 export KICKSITE_ADMIN_USERNAME=KicksiteAdmin
 export KICKSITE_ADMIN_PASSWORD=<password>
-export KICKSITE_SVC_NEW_USER_SESSION_URL=http://api.classic.kicksite.test:5000/v1/users/new/sessions
+export KICKSITE_AUTH_URL=http://auth.kicksite.test:5004
 # ===================================================================================================
 ```
 

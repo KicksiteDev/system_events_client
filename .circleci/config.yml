@@ -8,7 +8,7 @@ jobs:
           RAILS_ENV: test
           SYSTEM_EVENTS_API_URL: https://system-events.kicksite-staging.net
           KICKSITE_ADMIN_USERNAME: KicksiteAdmin
-          KICKSITE_SVC_NEW_USER_SESSION_URL: https://api.classic.kicksite-staging.net/v1/users/new/sessions
+          KICKSITE_AUTH_URL: https://auth.kicksite-staging.net
 
     steps:
       - checkout

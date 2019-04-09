@@ -12,7 +12,9 @@ RSpec.describe SystemEvent do
         }
       }
     }
-    token = HTTParty.post(ENV['KICKSITE_SVC_NEW_USER_SESSION_URL'], options)['token']
+
+    new_user_session_url = "#{ENV['KICKSITE_AUTH_URL']}/v1/users/new/sessions"
+    token = HTTParty.post(new_user_session_url, options)['token']
     SystemEventsApiBearerAuth.connection.bearer_token = token
   end
 
