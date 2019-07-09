@@ -14,4 +14,6 @@ module SystemEventsClient
   COMMENT_EVENT_TYPE    = 'comment'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
+  UPDATE_EVENT_ACTION   = 'update'.freeze
+  DELETE_EVENT_ACTION   = 'delete'.freeze
 end
