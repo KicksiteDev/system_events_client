@@ -12,6 +12,7 @@ module SystemEventsClient
   EVENT_EVENT_TYPE      = 'event'.freeze
   FAMILY_EVENT_TYPE     = 'family'.freeze
   COMMENT_EVENT_TYPE    = 'comment'.freeze
+  TASK_EVENT_TYPE       = 'task'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
