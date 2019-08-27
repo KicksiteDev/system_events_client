@@ -14,6 +14,7 @@ module SystemEventsClient
   COMMENT_EVENT_TYPE     = 'comment'.freeze
   TASK_EVENT_TYPE        = 'task'.freeze
   APPOINTMENT_EVENT_TYPE = 'appointment'.freeze
+  TRIAL_MEMBERSHIP_EVENT_TYPE = 'appointment'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
