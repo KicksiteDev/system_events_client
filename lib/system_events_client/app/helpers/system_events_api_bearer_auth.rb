@@ -1,6 +1,3 @@
-require_relative 'system_events_api_base'
-require_relative 'bearer_auth_connection'
-
 # Our base that requires basic authentication
 class SystemEventsApiBearerAuth < SystemEventsApiBase
   self.auth_type = :bearer

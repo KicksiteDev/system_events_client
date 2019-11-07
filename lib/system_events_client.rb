@@ -1,4 +1,9 @@
-Dir["#{File.dirname(__FILE__)}/system_events_client/**/*.rb"].each { |file| require file }
+require 'system_events_client/version.rb'
+require 'system_events_client/app/helpers/system_events_api_base.rb'
+require 'system_events_client/app/helpers/bearer_auth_connection.rb'
+require 'system_events_client/app/helpers/system_events_api_bearer_auth.rb'
+Dir["#{File.dirname(__FILE__)}/system_events_client/app/helpers/**/*.rb"].each { |file| require file }
+Dir["#{File.dirname(__FILE__)}/system_events_client/app/models/**/*.rb"].each { |file| require file }
 
 # Entry to REST api model definitions
 module SystemEventsClient
