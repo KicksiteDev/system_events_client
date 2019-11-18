@@ -14,17 +14,18 @@ module SystemEventsClient
     end
   end
 
-  STUDENT_EVENT_TYPE            = 'student'.freeze
-  PROSPECT_EVENT_TYPE           = 'prospect'.freeze
-  PAYMENT_EVENT_TYPE            = 'payment'.freeze
-  MEMBERSHIP_EVENT_TYPE         = 'membership'.freeze
-  INVOICE_EVENT_TYPE            = 'invoice'.freeze
-  EVENT_EVENT_TYPE              = 'event'.freeze
-  FAMILY_EVENT_TYPE             = 'family'.freeze
-  COMMENT_EVENT_TYPE            = 'comment'.freeze
-  TASK_EVENT_TYPE               = 'task'.freeze
-  APPOINTMENT_EVENT_TYPE        = 'appointment'.freeze
-  BILLING_CONNECTION_EVENT_TYPE = 'billing_connection'.freeze
+  STUDENT_EVENT_TYPE                        = 'student'.freeze
+  PROSPECT_EVENT_TYPE                       = 'prospect'.freeze
+  PAYMENT_EVENT_TYPE                        = 'payment'.freeze
+  MEMBERSHIP_EVENT_TYPE                     = 'membership'.freeze
+  INVOICE_EVENT_TYPE                        = 'invoice'.freeze
+  EVENT_EVENT_TYPE                          = 'event'.freeze
+  FAMILY_EVENT_TYPE                         = 'family'.freeze
+  COMMENT_EVENT_TYPE                        = 'comment'.freeze
+  TASK_EVENT_TYPE                           = 'task'.freeze
+  APPOINTMENT_EVENT_TYPE                    = 'appointment'.freeze
+  BILLING_CONNECTION_EVENT_TYPE             = 'billing_connection'.freeze
+  LEAD_CAPTURE_FORM_SUBMISSION_EVENT_TYPE   = 'lead_capture_form_submission'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
