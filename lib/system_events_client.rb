@@ -25,6 +25,7 @@ module SystemEventsClient
   TASK_EVENT_TYPE                           = 'task'.freeze
   APPOINTMENT_EVENT_TYPE                    = 'appointment'.freeze
   BILLING_CONNECTION_EVENT_TYPE             = 'billing_connection'.freeze
+  LEAD_CAPTURE_FORM_EVENT_TYPE              = 'lead_capture_form'.freeze
   LEAD_CAPTURE_FORM_SUBMISSION_EVENT_TYPE   = 'lead_capture_form_submission'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
