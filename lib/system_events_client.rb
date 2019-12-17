@@ -27,6 +27,7 @@ module SystemEventsClient
   BILLING_CONNECTION_EVENT_TYPE             = 'billing_connection'.freeze
   LEAD_CAPTURE_FORM_EVENT_TYPE              = 'lead_capture_form'.freeze
   LEAD_CAPTURE_FORM_SUBMISSION_EVENT_TYPE   = 'lead_capture_form_submission'.freeze
+  USER_SESSION_EVENT_TYPE                   = 'user_session'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
