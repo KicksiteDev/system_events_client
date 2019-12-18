@@ -28,6 +28,7 @@ module SystemEventsClient
   LEAD_CAPTURE_FORM_EVENT_TYPE              = 'lead_capture_form'.freeze
   LEAD_CAPTURE_FORM_SUBMISSION_EVENT_TYPE   = 'lead_capture_form_submission'.freeze
   USER_SESSION_EVENT_TYPE                   = 'user_session'.freeze
+  ACCOUNT_EVENT_TYPE                        = 'account'.freeze
   ATTENDANCE_EVENT_TYPE                     = 'attendance'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
