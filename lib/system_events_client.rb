@@ -30,6 +30,7 @@ module SystemEventsClient
   USER_SESSION_EVENT_TYPE                   = 'user_session'.freeze
   ACCOUNT_EVENT_TYPE                        = 'account'.freeze
   ATTENDANCE_EVENT_TYPE                     = 'attendance'.freeze
+  LANDING_PAGE_EVENT_TYPE                   = 'landing_page'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
