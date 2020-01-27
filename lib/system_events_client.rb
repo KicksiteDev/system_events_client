@@ -2,8 +2,8 @@ require 'system_events_client/version.rb'
 require 'system_events_client/app/helpers/system_events_api_base.rb'
 require 'system_events_client/app/helpers/bearer_auth_connection.rb'
 require 'system_events_client/app/helpers/system_events_api_bearer_auth.rb'
-Dir["#{File.dirname(__FILE__)}/system_events_client/app/helpers/**/*.rb"].each { |file| require file }
-Dir["#{File.dirname(__FILE__)}/system_events_client/app/models/**/*.rb"].each { |file| require file }
+Dir["#{File.dirname(__FILE__)}/system_events_client/app/helpers/**/*.rb"].sort.each { |file| require file }
+Dir["#{File.dirname(__FILE__)}/system_events_client/app/models/**/*.rb"].sort.each { |file| require file }
 
 # Entry to REST api model definitions
 module SystemEventsClient
@@ -30,6 +30,7 @@ module SystemEventsClient
   USER_SESSION_EVENT_TYPE                   = 'user_session'.freeze
   ACCOUNT_EVENT_TYPE                        = 'account'.freeze
   ATTENDANCE_EVENT_TYPE                     = 'attendance'.freeze
+  LANDING_PAGE_EVENT_TYPE                   = 'landing_page'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
