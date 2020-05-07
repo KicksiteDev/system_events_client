@@ -32,6 +32,7 @@ module SystemEventsClient
   ATTENDANCE_EVENT_TYPE                     = 'attendance'.freeze
   LANDING_PAGE_EVENT_TYPE                   = 'landing_page'.freeze
   LANDING_PAGE_SUBMISSION_EVENT_TYPE        = 'landing_page_submission'.freeze
+  PROGRAM_EVENT_TYPE                        = 'program'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
