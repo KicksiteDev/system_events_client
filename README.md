@@ -21,14 +21,8 @@ Or install it yourself as:
 ## Usage
 
 ```
-export SYSTEM_EVENTS_API_URL=http://system-events.kicksite.test:3000
-# ===================================================================================================
-# Required for the test suite to be able to auth before each call
-# ===================================================================================================
-export KICKSITE_ADMIN_USERNAME=KicksiteAdmin
-export KICKSITE_ADMIN_PASSWORD=<password>
+export SYSTEM_EVENTS_API_URL=http://system-events.kicksite.test:5002
 export KICKSITE_AUTH_URL=http://auth.kicksite.test:5004
-# ===================================================================================================
 ```
 
 ## Development
