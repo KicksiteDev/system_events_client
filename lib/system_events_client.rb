@@ -1,7 +1,7 @@
-require 'system_events_client/version.rb'
-require 'system_events_client/app/helpers/system_events_api_base.rb'
-require 'system_events_client/app/helpers/bearer_auth_connection.rb'
-require 'system_events_client/app/helpers/system_events_api_bearer_auth.rb'
+require 'system_events_client/version'
+require 'system_events_client/app/helpers/system_events_api_base'
+require 'system_events_client/app/helpers/bearer_auth_connection'
+require 'system_events_client/app/helpers/system_events_api_bearer_auth'
 Dir["#{File.dirname(__FILE__)}/system_events_client/app/helpers/**/*.rb"].sort.each { |file| require file }
 Dir["#{File.dirname(__FILE__)}/system_events_client/app/models/**/*.rb"].sort.each { |file| require file }
 

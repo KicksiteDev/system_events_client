@@ -1,3 +1,10 @@
+AllCops:
+  Exclude:
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - '.git/**/*'
+    - 'db/schema.rb'
+
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: when_needed, always, never
@@ -6,9 +13,143 @@ Style/FrozenStringLiteralComment:
 
 # Configuration parameters: AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.
 # URISchemes: http, https
-Metrics/LineLength:
+Layout/LineLength:
   Max: 115
+
+Metrics/MethodLength:
+  Max: 50
 
 Metrics/BlockLength:
   Max: 65
-  ExcludedMethods: ['describe']
+  ExcludedMethods: ['resource', 'namespace', 'describe', 'context', 'route_param']
+
+Metrics/AbcSize:
+  Max: 65
+
+Lint/ScriptPermission:
+  Enabled: false
+
+Metrics/ClassLength:
+  Max: 110
+
+Metrics/CyclomaticComplexity:
+  Max: 8
+
+Metrics/PerceivedComplexity:
+  Max: 8
+
+Lint/SuppressedException:
+  AllowComments: true
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
+Style/ExponentialNotation:
+  Enabled: true
+
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+
+Style/SlicingWithRange:
+  Enabled: true
+
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+
+Style/RedundantRegexpEscape:
+  Enabled: false
+
+Style/RedundantFetchBlock:
+  Enabled: true
+
+Style/AccessorGrouping:
+  Enabled: true
+
+Style/BisectedAttrAccessor:
+  Enabled: true
+
+Style/RedundantAssignment:
+  Enabled: true
+
+Lint/DuplicateElsifCondition:
+   Enabled: true
+
+Style/ArrayCoercion:
+   Enabled: true
+
+Style/CaseLikeIf:
+   Enabled: true
+
+Style/HashAsLastArrayItem:
+   Enabled: true
+
+Style/HashLikeCase:
+   Enabled: true
+
+Style/RedundantFileExtensionInRequire:
+  Enabled: true
+
+Lint/BinaryOperatorWithIdenticalOperands:
+  Enabled: true
+
+Lint/DuplicateRescueException:
+  Enabled: true
+
+Lint/EmptyConditionalBody:
+  Enabled: true
+
+Lint/FloatComparison:
+  Enabled: true
+
+Lint/MissingSuper:
+  Enabled: false
+
+Lint/OutOfRangeRegexpRef:
+  Enabled: true
+
+Lint/SelfAssignment:
+  Enabled: true
+
+Lint/TopLevelReturnWithArgument:
+  Enabled: true
+
+Lint/UnreachableLoop:
+  Enabled: true
+
+Style/ExplicitBlockArgument:
+  Enabled: true
+
+Style/GlobalStdStream:
+  Enabled: true
+
+Style/OptionalBooleanParameter:
+  Enabled: false
+
+Style/SingleArgumentDig:
+  Enabled: true
+
+# NOTE: sure why this wasn't complaining initially.
+# There are spots in here I'm a little afraid to touch without extensive testing.
+Style/StringConcatenation:
+  Enabled: false
