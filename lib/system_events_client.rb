@@ -36,6 +36,7 @@ module SystemEventsClient
   SUBSCRIPTION_EVENT_TYPE                   = 'subscription'.freeze
   DOCUMENT_EVENT_TYPE                       = 'document'.freeze
   AGREEMENT_EVENT_TYPE                      = 'agreement'.freeze
+  PROMOTION_EVENT_TYPE                      = 'promotion'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
