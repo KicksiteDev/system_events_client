@@ -35,6 +35,7 @@ module SystemEventsClient
   DOCUMENT_EVENT_TYPE                       = 'document'.freeze
   AGREEMENT_EVENT_TYPE                      = 'agreement'.freeze
   PROMOTION_EVENT_TYPE                      = 'promotion'.freeze
+  COMMENT_EVENT_TYPE                        = 'comment'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
