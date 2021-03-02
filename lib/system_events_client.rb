@@ -34,6 +34,7 @@ module SystemEventsClient
   LANDING_PAGE_SUBMISSION_EVENT_TYPE        = 'landing_page_submission'.freeze
   PROGRAM_EVENT_TYPE                        = 'program'.freeze
   SUBSCRIPTION_EVENT_TYPE                   = 'subscription'.freeze
+  DOCUMENT_EVENT_TYPE                       = 'document'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
