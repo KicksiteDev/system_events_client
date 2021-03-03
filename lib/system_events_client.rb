@@ -7,11 +7,9 @@ Dir["#{File.dirname(__FILE__)}/system_events_client/app/models/**/*.rb"].sort.ea
 
 # Entry to REST api model definitions
 module SystemEventsClient
-  # Note: Anyone consuming this should mock the actual REST calls in their tests
-  unless ENV['RAILS_ENV'] == 'test'
-    if ENV['SYSTEM_EVENTS_API_URL'].blank?
-      raise 'Set SYSTEM_EVENTS_API_URL environment variable to utilize this gem'
-    end
+  # NOTE: Anyone consuming this should mock the actual REST calls in their tests
+  if ENV['SYSTEM_EVENTS_API_URL'].blank? && ENV['RAILS_ENV'] != 'test'
+    raise 'Set SYSTEM_EVENTS_API_URL environment variable to utilize this gem'
   end
 
   STUDENT_EVENT_TYPE                        = 'student'.freeze
@@ -34,6 +32,10 @@ module SystemEventsClient
   LANDING_PAGE_SUBMISSION_EVENT_TYPE        = 'landing_page_submission'.freeze
   PROGRAM_EVENT_TYPE                        = 'program'.freeze
   SUBSCRIPTION_EVENT_TYPE                   = 'subscription'.freeze
+  DOCUMENT_EVENT_TYPE                       = 'document'.freeze
+  AGREEMENT_EVENT_TYPE                      = 'agreement'.freeze
+  PROMOTION_EVENT_TYPE                      = 'promotion'.freeze
+  COMMENT_EVENT_TYPE                        = 'comment'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
