@@ -39,4 +39,5 @@ module SystemEventsClient
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
   DELETE_EVENT_ACTION   = 'delete'.freeze
+  SIGN_EVENT_ACTION     = 'sign'.freeze
 end
