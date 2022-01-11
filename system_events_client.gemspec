@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'REST endpoint definitions to system_events backend'
   spec.description   = 'Utilize for gaining access to system_events backend/database'
   spec.homepage      = 'https://github.com/KicksiteDev/system_events_client'
-  spec.required_ruby_version = '>= 2.4'
+  spec.required_ruby_version = '>= 2.5'
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
