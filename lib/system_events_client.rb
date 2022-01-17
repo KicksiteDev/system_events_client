@@ -35,6 +35,8 @@ module SystemEventsClient
   DOCUMENT_EVENT_TYPE                       = 'document'.freeze
   AGREEMENT_EVENT_TYPE                      = 'agreement'.freeze
   PROMOTION_EVENT_TYPE                      = 'promotion'.freeze
+  CLASS_EVENT_EVENT_TYPE                    = 'class_event'.freeze
+  RECURRING_CLASS_EVENT_TYPE                = 'recurring_class'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
