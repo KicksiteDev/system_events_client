@@ -37,6 +37,7 @@ module SystemEventsClient
   PROMOTION_EVENT_TYPE                      = 'promotion'.freeze
   CLASS_EVENT_EVENT_TYPE                    = 'class_event'.freeze
   RECURRING_CLASS_EVENT_TYPE                = 'recurring_class'.freeze
+  SCHOOL_TRANSACTION_EVENT_TYPE             = 'school_transaction'.freeze
 
   CREATE_EVENT_ACTION   = 'create'.freeze
   UPDATE_EVENT_ACTION   = 'update'.freeze
