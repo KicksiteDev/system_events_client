@@ -12,36 +12,52 @@ module SystemEventsClient
     raise 'Set SYSTEM_EVENTS_API_URL environment variable to utilize this gem'
   end
 
-  STUDENT_EVENT_TYPE                        = 'student'.freeze
-  PROSPECT_EVENT_TYPE                       = 'prospect'.freeze
-  PAYMENT_EVENT_TYPE                        = 'payment'.freeze
-  MEMBERSHIP_EVENT_TYPE                     = 'membership'.freeze
-  INVOICE_EVENT_TYPE                        = 'invoice'.freeze
-  EVENT_EVENT_TYPE                          = 'event'.freeze
-  FAMILY_EVENT_TYPE                         = 'family'.freeze
-  COMMENT_EVENT_TYPE                        = 'comment'.freeze
-  TASK_EVENT_TYPE                           = 'task'.freeze
-  APPOINTMENT_EVENT_TYPE                    = 'appointment'.freeze
-  BILLING_CONNECTION_EVENT_TYPE             = 'billing_connection'.freeze
-  LEAD_CAPTURE_FORM_EVENT_TYPE              = 'lead_capture_form'.freeze
-  LEAD_CAPTURE_FORM_SUBMISSION_EVENT_TYPE   = 'lead_capture_form_submission'.freeze
-  USER_SESSION_EVENT_TYPE                   = 'user_session'.freeze
-  ACCOUNT_EVENT_TYPE                        = 'account'.freeze
-  ATTENDANCE_EVENT_TYPE                     = 'attendance'.freeze
-  LANDING_PAGE_EVENT_TYPE                   = 'landing_page'.freeze
-  LANDING_PAGE_SUBMISSION_EVENT_TYPE        = 'landing_page_submission'.freeze
-  PROGRAM_EVENT_TYPE                        = 'program'.freeze
-  SUBSCRIPTION_EVENT_TYPE                   = 'subscription'.freeze
-  DOCUMENT_EVENT_TYPE                       = 'document'.freeze
-  AGREEMENT_EVENT_TYPE                      = 'agreement'.freeze
-  PROMOTION_EVENT_TYPE                      = 'promotion'.freeze
-  CLASS_EVENT_EVENT_TYPE                    = 'class_event'.freeze
-  RECURRING_CLASS_EVENT_TYPE                = 'recurring_class'.freeze
-  SCHOOL_TRANSACTION_EVENT_TYPE             = 'school_transaction'.freeze
+  TYPES = {
+    STUDENT_EVENT_TYPE: 'student'.freeze,
+    PROSPECT_EVENT_TYPE: 'prospect'.freeze,
+    PAYMENT_EVENT_TYPE: 'payment'.freeze,
+    MEMBERSHIP_EVENT_TYPE: 'membership'.freeze,
+    INVOICE_EVENT_TYPE: 'invoice'.freeze,
+    EVENT_EVENT_TYPE: 'event'.freeze,
+    FAMILY_EVENT_TYPE: 'family'.freeze,
+    COMMENT_EVENT_TYPE: 'comment'.freeze,
+    TASK_EVENT_TYPE: 'task'.freeze,
+    APPOINTMENT_EVENT_TYPE: 'appointment'.freeze,
+    BILLING_CONNECTION_EVENT_TYPE: 'billing_connection'.freeze,
+    LEAD_CAPTURE_FORM_EVENT_TYPE: 'lead_capture_form'.freeze,
+    LEAD_CAPTURE_FORM_SUBMISSION_EVENT_TYPE: 'lead_capture_form_submission'.freeze,
+    USER_SESSION_EVENT_TYPE: 'user_session'.freeze,
+    ACCOUNT_EVENT_TYPE: 'account'.freeze,
+    ATTENDANCE_EVENT_TYPE: 'attendance'.freeze,
+    LANDING_PAGE_EVENT_TYPE: 'landing_page'.freeze,
+    LANDING_PAGE_SUBMISSION_EVENT_TYPE: 'landing_page_submission'.freeze,
+    PROGRAM_EVENT_TYPE: 'program'.freeze,
+    SUBSCRIPTION_EVENT_TYPE: 'subscription'.freeze,
+    DOCUMENT_EVENT_TYPE: 'document'.freeze,
+    AGREEMENT_EVENT_TYPE: 'agreement'.freeze,
+    PROMOTION_EVENT_TYPE: 'promotion'.freeze,
+    CLASS_EVENT_EVENT_TYPE: 'class_event'.freeze,
+    RECURRING_CLASS_EVENT_TYPE: 'recurring_class'.freeze,
+    SCHOOL_TRANSACTION_EVENT_TYPE: 'school_transaction'.freeze
+  }
+  TYPES.each do |name, value|
+    const_set(name, value)
+  end
 
-  CREATE_EVENT_ACTION   = 'create'.freeze
-  UPDATE_EVENT_ACTION   = 'update'.freeze
-  DELETE_EVENT_ACTION   = 'delete'.freeze
+  ACTIONS = {
+    CREATE_EVENT_ACTION: 'create'.freeze,
+    UPDATE_EVENT_ACTION: 'update'.freeze,
+    DELETE_EVENT_ACTION: 'delete'.freeze
+  }
+  ACTIONS.each do |name, value|
+    const_set(name, value)
+  end
 
-  CREATED_AT_SORT_BY = 'created_at'.freeze
+
+  SORTS = {
+    CREATED_AT_SORT_BY = 'created_at'.freeze
+  }
+  SORTS.each do |name, value|
+    const_set(name, value)
+  end
 end
