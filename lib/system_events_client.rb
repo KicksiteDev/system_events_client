@@ -53,9 +53,8 @@ module SystemEventsClient
     const_set(name, value)
   end
 
-
   SORTS = {
-    CREATED_AT_SORT_BY = 'created_at'.freeze
+    CREATED_AT_SORT_BY: 'created_at'.freeze
   }
   SORTS.each do |name, value|
     const_set(name, value)
