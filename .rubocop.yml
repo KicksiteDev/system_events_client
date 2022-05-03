@@ -4,6 +4,7 @@ AllCops:
     - 'vendor/**/*'
     - '.git/**/*'
     - 'db/schema.rb'
+  NewCops: enable
 
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle.
