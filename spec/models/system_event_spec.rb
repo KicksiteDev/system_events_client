@@ -4,8 +4,8 @@ RSpec.describe SystemEvent do
   before(:each) do
     options = {
       body: {
-        login: ENV['KICKSITE_ADMIN_USERNAME'],
-        password: ENV['KICKSITE_ADMIN_PASSWORD'],
+        login: ENV.fetch('KICKSITE_ADMIN_USERNAME', nil),
+        password: ENV.fetch('KICKSITE_ADMIN_PASSWORD', nil),
         context: {
           type: 'School',
           id: 119
@@ -13,7 +13,7 @@ RSpec.describe SystemEvent do
       }
     }
 
-    new_user_session_url = "#{ENV['KICKSITE_AUTH_URL']}/v1/users/new/sessions"
+    new_user_session_url = "#{ENV.fetch('KICKSITE_AUTH_URL', nil)}/v1/users/new/sessions"
     token = HTTParty.post(new_user_session_url, options)['token']
     SystemEventsApiBearerAuth.connection.bearer_token = token
   end
