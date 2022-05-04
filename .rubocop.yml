@@ -4,6 +4,7 @@ AllCops:
     - 'vendor/**/*'
     - '.git/**/*'
     - 'db/schema.rb'
+  NewCops: enable
 
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle.
@@ -21,7 +22,7 @@ Metrics/MethodLength:
 
 Metrics/BlockLength:
   Max: 65
-  ExcludedMethods: ['resource', 'namespace', 'describe', 'context', 'route_param']
+  IgnoredMethods: ['resource', 'namespace', 'describe', 'context', 'route_param']
 
 Metrics/AbcSize:
   Max: 65
