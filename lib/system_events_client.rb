@@ -39,7 +39,8 @@ module SystemEventsClient
     CLASS_EVENT_EVENT_TYPE: 'class_event'.freeze,
     RECURRING_CLASS_EVENT_TYPE: 'recurring_class'.freeze,
     RECURRING_BILLING_EVENT_TYPE: 'recurring_billing'.freeze,
-    SCHOOL_TRANSACTION_EVENT_TYPE: 'school_transaction'.freeze
+    SCHOOL_TRANSACTION_EVENT_TYPE: 'school_transaction'.freeze,
+    CHECKLIST_ITEM_EVENT_TYPE: 'checklist_item'.freeze
   }.freeze
   TYPES.each do |name, value|
     const_set(name, value)
