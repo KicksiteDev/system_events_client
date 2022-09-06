@@ -15,6 +15,7 @@ module SystemEventsClient
   TYPES = {
     STUDENT_EVENT_TYPE: 'student'.freeze,
     PROSPECT_EVENT_TYPE: 'prospect'.freeze,
+    EMPLOYEE_EVENT_TYPE: 'employee'.freeze,
     PAYMENT_EVENT_TYPE: 'payment'.freeze,
     MEMBERSHIP_EVENT_TYPE: 'membership'.freeze,
     INVOICE_EVENT_TYPE: 'invoice'.freeze,
