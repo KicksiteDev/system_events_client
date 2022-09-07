@@ -15,6 +15,7 @@ module SystemEventsClient
   TYPES = {
     STUDENT_EVENT_TYPE: 'student'.freeze,
     PROSPECT_EVENT_TYPE: 'prospect'.freeze,
+    ADMINISTRATOR_EVENT_TYPE: 'administrator'.freeze,
     EMPLOYEE_EVENT_TYPE: 'employee'.freeze,
     PAYMENT_EVENT_TYPE: 'payment'.freeze,
     MEMBERSHIP_EVENT_TYPE: 'membership'.freeze,
@@ -41,7 +42,8 @@ module SystemEventsClient
     RECURRING_CLASS_EVENT_TYPE: 'recurring_class'.freeze,
     RECURRING_BILLING_EVENT_TYPE: 'recurring_billing'.freeze,
     SCHOOL_TRANSACTION_EVENT_TYPE: 'school_transaction'.freeze,
-    CHECKLIST_ITEM_EVENT_TYPE: 'checklist_item'.freeze
+    CHECKLIST_ITEM_EVENT_TYPE: 'checklist_item'.freeze,
+    USER_EVENT_TYPE: 'user'.freeze,
   }.freeze
   TYPES.each do |name, value|
     const_set(name, value)
